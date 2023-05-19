@@ -1,30 +1,32 @@
-import React from 'react'
-import Navbar from './components/estaticos/navbar/Navbar'
-import Footer from './components/estaticos/footer/Footer'
-import Home from './paginas/home/Home'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/estaticos/navbar/Navbar';
+import Footer from './components/estaticos/footer/Footer';
+import Home from './paginas/home/Home';
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Login from './login/Login';
+import Login from './paginas/login/Login';
+import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 
 
 function App() {
   return (
+    <Router>
+      <Navbar />
+      <Routes>
 
-    <>
-      <BrowserRouter>
-        <Navbar />
-         <Routes>
-         <Route path="/" element={<Home />}/>
-         <Route path="/home" element={<Home />}/>
-         <Route path='/login' element={<Login />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-    </>
+        <Route path="/" element={<Login  />} />
+
+        <Route path="/home" element={<Home />} />
+
+        <Route path="/login" element={<Login />} />
+        
+        <Route path="/cadastrousuario" element={<CadastroUsuario />} />
+
+      </Routes>
+      <Footer />
+    </Router>
 
   );
 }
-
-
 
 export default App;
