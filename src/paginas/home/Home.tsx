@@ -1,6 +1,7 @@
 import React from 'react';
 import {Typography, Grid, Button} from '@material-ui/core';
 import {Box} from '@mui/material';
+import TabPostagem from '../../components/postagens/tabpostagem/TabPostagem';
 import './Home.css';
 import Carrossel from '../../components/carrossel/Carrossel';
 
@@ -27,6 +28,7 @@ function Home() {
             </Grid> */}
 
             <Grid container style={{ marginTop: "8px" }}>
+                <TabPostagem />
                 <Grid item xs={12}>
                     <Carrossel />
             </Grid>
