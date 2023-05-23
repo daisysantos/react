@@ -16,3 +16,12 @@
 .text-decorator-none{
     text-decoration: none ;
 }
+
+.fundo{
+    background-color: white;
+}
+
+.corfonte{
+   color: #850a0a;
+   font-weight: bold !important;
+}
