@@ -27,7 +27,7 @@ function Navbar() {
                     </Box>
 
                     <Box display="flex" justifyContent="start">
-                        <Link to='/home' className='.text-decorator-none'>
+                        <Link to='/home' className='text-decorator-none'>
                             <Box mx={1} className='cursor'>
                                 <Typography variant="h6" style={{ color: "white" }}>
                                     Home
@@ -35,7 +35,7 @@ function Navbar() {
                             </Box>
                         </Link>
 
-                        <Link to='/posts' className='.text-decorator-none'>
+                        <Link to='/posts' className='text-decorator-none'>
                             <Box mx={1} className='cursor'>
                                 <Typography variant="h6" style={{ color: "white" }}>
                                     Postagens
@@ -43,7 +43,7 @@ function Navbar() {
                             </Box>
                         </Link>
 
-                        <Link to='/temas' className='.text-decorator-none'>
+                        <Link to='/temas' className='text-decorator-none'>
                             <Box mx={1} className='cursor'>
                                 <Typography variant="h6" style={{ color: "white" }}>
                                     Temas
@@ -51,7 +51,7 @@ function Navbar() {
                             </Box>
                         </Link>
 
-                        <Link to='/formularioTema' className='.text-decorator-none'>
+                        <Link to='/formularioTema' className='text-decorator-none'>
                             <Box mx={1} className='cursor'>
                                 <Typography variant="h6" style={{ color: "white" }}>
                                     Cadastrar tema

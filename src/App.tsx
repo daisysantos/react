@@ -23,12 +23,10 @@ function App() {
 
           <Route path="/" element={<Login />} />
 
-
-
-          <Route path="/login" element={<Login />} />
-
           <Route path="/home" element={<Home />} />
 
+          <Route path="/login" element={<Login />} />
+         
           <Route path="/cadastrousuario" element={<CadastroUsuario />} />
 
           <Route path="/temas" element={<ListaTema />} />
