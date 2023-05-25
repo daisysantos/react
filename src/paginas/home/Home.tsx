@@ -7,15 +7,33 @@ import './Home.css';
 import { useNavigate } from 'react-router';
 import useLocalStorage from 'react-use-localstorage';
 import Carrossel from '../../components/carrossel/Carrossel';
+import { UserState } from '../../store/token/Reducer';
+import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom'
+import { toast } from 'react-toastify';
 
 function Home() {
 
     let navigate = useNavigate();
-    const [token, setToken] = useLocalStorage('token');
+    // const [token, setToken] = useLocalStorage('token');
+
+    const token = useSelector<UserState, UserState["tokens"]>(
+        (state) => state.tokens
+    )
 
     useEffect(() => {
         if (token == "") {
-            alert("Você precisa estar logado")
+            // alert("Você precisa estar logado")
+            toast.error('Você precisa estar logado!', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
             navigate("/login")
 
         }
@@ -33,7 +51,9 @@ function Home() {
                         <Box marginRight={1}>
                             <ModalPostagem />
                         </Box>
-                        <Button variant="outlined" className='botao'>Ver Postagens</Button>
+                        <Link to="/posts" className='text-dcorator-none'>
+                            <Button variant="outlined" className='botao'>Ver Postagens</Button>
+                        </Link>
                     </Box>
                 </Grid>
                 <Grid item xs={6} >

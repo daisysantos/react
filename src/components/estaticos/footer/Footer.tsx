@@ -5,10 +5,20 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import { Typography, Grid } from '@material-ui/core';
 import './Footer.css'
 import { Box } from '@mui/material';
+import { useDispatch, useSelector } from 'react-redux';
+import { UserState } from '../../../store/token/Reducer';
 
 function Footer() {
-    return (
-        <>
+
+    const token = useSelector<UserState, UserState["tokens"]>(
+        (state) => state.tokens
+    );
+    var footerComponent
+
+    if (token !== '') {
+        footerComponent =
+
+
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid alignItems="center" item xs={12}>
                     <Box className='box1'>
@@ -17,13 +27,13 @@ function Footer() {
                         </Box>
                         <Box display="flex" alignItems="center" justifyContent="center">
                             <a href="https://github.com/daisysantos" target="_blank">
-                                <GithubIcon className='redes'/>
+                                <GithubIcon className='redes' />
                             </a>
                             <a href="https://www.instagram.com/daisycristina7/" target="_blank">
-                                <InstagramIcon className='redes'/>
+                                <InstagramIcon className='redes' />
                             </a>
                             <a href="https://www.linkedin.com/in/daisy-santos-s/" target="_blank">
-                                <LinkedInIcon className='redes'/>
+                                <LinkedInIcon className='redes' />
                             </a>
                         </Box>
                     </Box>
@@ -39,6 +49,10 @@ function Footer() {
                     </Box>
                 </Grid>
             </Grid>
+    }
+    return (
+        <>
+            {footerComponent}
         </>
     )
 }
