@@ -12,8 +12,6 @@ import { toast } from 'react-toastify';
 
 function Login() {
     let navigate = useNavigate();
-    // const [token, setToken] = useLocalStorage('token');
-
     const dispatch = useDispatch();
 
     const [token, setToken] = useState("");
@@ -48,7 +46,6 @@ function Login() {
         e.preventDefault();
         try {
             await login(`/usuarios/logar`, userLogin, setToken)
-            // alert('Usuário logado com sucesso!');
             toast.success('Usuário logado com sucesso!', {
                 position: "top-right",
                 autoClose: 2000,
@@ -61,7 +58,7 @@ function Login() {
             });
 
         } catch (error) {
-            // alert('Dados do usuário inválidos, erro ao logar!');
+
             toast.error('Dados do usuário inválidos, erro ao logar!', {
                 position: "top-right",
                 autoClose: 2000,

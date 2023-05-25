@@ -15,15 +15,12 @@ import { toast } from 'react-toastify';
 function Home() {
 
     let navigate = useNavigate();
-    // const [token, setToken] = useLocalStorage('token');
-
     const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
     )
 
     useEffect(() => {
         if (token == "") {
-            // alert("Você precisa estar logado")
             toast.error('Você precisa estar logado!', {
                 position: "top-right",
                 autoClose: 2000,
