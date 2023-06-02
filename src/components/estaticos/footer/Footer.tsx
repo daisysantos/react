@@ -42,7 +42,7 @@ function Footer() {
                             <Typography variant="subtitle2" align="center" gutterBottom className='textos' > Daisy Santos© 2023 </Typography>
                         </Box>
                         <Box>
-                            <a target="_blank" href="https://brasil.generation.org">
+                            <a target="_blank" className='textos' href="https://brasil.generation.org">
                                 <Typography variant="subtitle2" gutterBottom className='textos' align="center">brasil.generation.org</Typography>
                             </a>
                         </Box>

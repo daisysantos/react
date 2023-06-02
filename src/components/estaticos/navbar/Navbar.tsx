@@ -41,13 +41,14 @@ function Navbar() {
     if (token !== '') {
         navbarComponent =
 
-            <AppBar position="static" style={{ background: "#850a0a" }}>
+            <AppBar position="static" className='bot' >
+                
                 <Toolbar variant="dense">
-                    <Box className='cursor'>
+                    {/* <Box className='cursor'>
                         <Typography variant="h5" color="inherit">
                             BlogPessoal
                         </Typography>
-                    </Box>
+                    </Box> */}
 
                     <Box display="flex" justifyContent="start">
                         <Link to='/home' className='text-decorator-none'>
@@ -74,16 +75,16 @@ function Navbar() {
                             </Box>
                         </Link>
 
-                        <Link to='/formularioTema' className='text-decorator-none'>
+                        {/* <Link to='/formularioTema' className='text-decorator-none'>
                             <Box mx={1} className='cursor'>
                                 <Typography variant="h6" style={{ color: "white" }}>
                                     Cadastrar tema
                                 </Typography>
                             </Box>
-                        </Link>
+                        </Link> */}
 
 
-                        <Box mx={1} className='cursor' onClick={goLogout}>
+                        <Box mx={1} onClick={goLogout}>
                             <Typography variant="h6" style={{ color: "white" }}>
                                 Logout
                             </Typography>

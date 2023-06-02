@@ -42,19 +42,19 @@ function Home() {
                 <Grid alignItems="center" item xs={6}>
                     <Box paddingX={20} >
                         <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo' background-color="white">Seja bem vindo(a)!</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>expresse aqui os seus pensamentos e opiniões!</Typography>
+                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>Que tal nos dizer sua comida favorita e a bebida que sempre acompanha ela 🤭!</Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                             <ModalPostagem />
                         </Box>
-                        <Link to="/posts" className='text-dcorator-none'>
+                        {/* <Link to="/posts" className='text-dcorator-none'>
                             <Button variant="outlined" className='botao'>Ver Postagens</Button>
-                        </Link>
+                        </Link> */}
                     </Box>
                 </Grid>
-                <Grid item xs={6} >
-                    <img src="https://i.pinimg.com/originals/a2/63/e6/a263e6aa33d2d2136ae8c5691399d3fe.gif" alt="" width="500px" height="500px" />
+                <Grid item xs={6}  >
+                    {/* <img src="https://i.pinimg.com/originals/a2/63/e6/a263e6aa33d2d2136ae8c5691399d3fe.gif" alt="" width="500px" height="500px" /> */}
                 </Grid>
                 <Grid xs={12} className='postagens'>
                     <TabPostagem />

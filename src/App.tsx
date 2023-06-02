@@ -16,6 +16,8 @@ import store from './store/Store';
 import { Provider } from 'react-redux';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
+import Sobre from './components/estaticos/Sobre';
+
 
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
             <Route path="/temas" element={<ListaTema />} />
 
             <Route path="/posts" element={<ListaPostagem />} />
+
+            <Route path="/sobre" element={<Sobre />} />
 
             <Route path="/formularioPostagem" element={<CadastroPost />} />
 

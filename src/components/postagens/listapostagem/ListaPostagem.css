@@ -1,3 +1,11 @@
 .text-decorator-none{
     text-decoration: none;
 }
+.botaodeletar{
+    border-color:#000000 !important;
+    background-color:#700505 !important;
+  }
+  .botaoatualizar{
+    border-color:#000000 !important;
+    background-color:#f3debc !important;
+  }  

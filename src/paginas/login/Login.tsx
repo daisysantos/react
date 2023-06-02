@@ -84,7 +84,7 @@ function Login() {
                         <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
                         <Box marginTop={5} textAlign='center'>
 
-                            <Button type='submit' variant='contained' color='primary'>
+                            <Button type='submit' variant='contained' style={{ background: '#ebcfc4' }}>
                                 Logar
                             </Button>
 
@@ -94,8 +94,8 @@ function Login() {
                         <Box marginRight={1}>
                             <Typography variant='subtitle1' gutterBottom align='center' className='corfonte' >Não tem uma conta?</Typography>
                         </Box>
-                        <Link to='/cadastrousuario'>
-                            <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
+                        <Link to='/cadastrousuario' className='none'>
+                            <Typography variant='subtitle1' gutterBottom align='center' className='cadastrar'>Cadastre-se</Typography>
                         </Link>
                     </Box>
                 </Box>

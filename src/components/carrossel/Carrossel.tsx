@@ -1,15 +1,8 @@
-// Importando os Componentes React Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Importando os estilos do Swiper
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-// Importando seu CSS
 import "./Carrossel.css";
-
-// Importanto Componentes do Swiper
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 function Carrossel() {
@@ -31,9 +24,9 @@ function Carrossel() {
                 className="mySwiper"
             >
 
-                <SwiperSlide>
-                    <img src="https://revista.sociedadedamesa.com.br/wp-content/uploads/2020/12/sociedade_da_mesa_vinhos_clube_de_vinhos_revista_digital_vinho_tinto_saiba_como_harmonizar.jpg" alt="Imagem" />
-                </SwiperSlide>
+                {/* <SwiperSlide>
+                    <img src="https://st.depositphotos.com/1258191/4122/i/450/depositphotos_41229993-stock-photo-wineglass-and-bottle-still-life.jpg" alt="Imagem" />
+                </SwiperSlide> */}
 
                 <SwiperSlide>
                     <img src="https://i.pinimg.com/originals/74/9b/43/749b4369d00b455aa19c01f8393b4c73.jpg" alt="Imagem" />

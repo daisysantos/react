@@ -57,6 +57,14 @@ function ListaTema() {
 
     return (
         <>
+
+<Link to="/formularioTema">
+                <Box mx={1} m={2}>
+                    <Button variant="contained" size='small' className= "botaotema" >
+                        Cadastre aqui um novo tema
+                    </Button>
+                </Box>
+            </Link>
             {
                 temas.map(tema => (
                     <Box m={2} >
@@ -74,14 +82,14 @@ function ListaTema() {
 
                                     <Link to={`/formularioTema/${tema.id}`} className="text-decorator-none">
                                         <Box mx={1}>
-                                            <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                                            <Button variant="contained" className="marginLeft" size='small' color="primary" style={{background: "#f3debc"}} >
                                                 Atualizar
                                             </Button>
                                         </Box>
                                     </Link>
                                     <Link to={`/deletarTema/${tema.id}`} className="text-decorator-none">
                                         <Box mx={1}>
-                                            <Button variant="contained" size='small' color="secondary">
+                                            <Button variant="contained" size='small' color="primary" style={{background: "#700505"}}>
                                                 Deletar
                                             </Button>
                                         </Box>
