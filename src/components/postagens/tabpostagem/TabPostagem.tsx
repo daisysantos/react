@@ -20,11 +20,11 @@ function TabPostagem() {
                         <Tab label="Sobre mim" value="2"/>
                     </Tabs>
                 </AppBar>
-                {/* <TabPanel value="1">
+                <TabPanel value="1">
                     <Box display="flex" flexWrap="wrap" justifyContent="center">
                         <ListaPostagem />
                     </Box>
-                </TabPanel> */}
+                </TabPanel>
                 <TabPanel value="2" background-color='white'>
                     <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="titulo">Sobre-nós</Typography>
                     <Typography variant="body1" gutterBottom color="textPrimary" align="justify" >Sou uma pessoa apaixonada pela visa e adora novos desafios. Desistir não é uma opção e melhor do que as vitórias é comemora-las com algo que nos faz bem. Uma boa refeição e um bebida perfeita melhoram qualquer dia 💖🖤!</Typography>
