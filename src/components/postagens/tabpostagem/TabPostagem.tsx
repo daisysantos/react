@@ -6,6 +6,7 @@ import './TabPostagem.css';
 import ListaPostagem from '../listaPostagem/ListaPostagem';
 
 
+
 function TabPostagem() {
   const [value, setValue] = useState('1')
   function handleChange(event: React.ChangeEvent<{}>, newValue: string) {

@@ -1,16 +1,15 @@
-import React, { useEffect } from 'react';
-import { Typography, Grid, Button } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
-import TabPostagem from '../../components/postagens/tabPostagem/TabPostagem';
-import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
-import './Home.css';
-import { useNavigate } from 'react-router';
-import useLocalStorage from 'react-use-localstorage';
-import Carrossel from '../../components/carrossel/Carrossel';
-import { UserState } from '../../store/token/Reducer';
+import { useEffect } from 'react';
+
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router';
 import { toast } from 'react-toastify';
+import Carrossel from '../../components/carrossel/Carrossel';
+import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
+import { UserState } from '../../store/token/Reducer';
+import './Home.css';
+import TabPostagem from '../../components/postagens/tabPostagem/TabPostagem';
 
 function Home() {
 
