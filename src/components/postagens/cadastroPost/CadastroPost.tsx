@@ -161,7 +161,7 @@ function CadastroPost() {
                         }
                     </Select>
                     <FormHelperText>Escolha um tema para a postagem</FormHelperText>
-                    <Button type="submit" variant="contained" color="primary" style={{background: "#f3debc"}} >
+                    <Button type="submit" variant="contained" color="primary" style={{ background: "#f3debc" }} >
                         Finalizar
                     </Button>
                 </FormControl>

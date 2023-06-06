@@ -12,7 +12,7 @@ import { toast } from 'react-toastify';
 import { addToken } from '../../../store/token/Actions';
 
 function Listapost() {
-  
+
   let navigate = useNavigate();
 
   const [posts, setPosts] = useState<any[]>([]);
@@ -54,7 +54,7 @@ function Listapost() {
   useEffect(() => {
     getpost();
   }, [posts.length]);
-  
+
   return (
     <>
       {posts.length === 0 ? (<div className="spinner"></div>) : (
@@ -74,9 +74,9 @@ function Listapost() {
                 <Typography variant="body2" component="p">
                   {post.tema?.descricao}
                 </Typography>
-                <Typography variant="body2" component="p">
+                {/* <Typography variant="body2" component="p">
                   Postado por: {post.usuario?.nome}
-                </Typography>
+                </Typography> */}
                 <Typography variant="body1" component="p">
                   Data: {Intl.DateTimeFormat('pt-BR', { dateStyle: 'short', timeStyle: 'medium' }).format(new Date(post.data))}
                 </Typography>
