@@ -14,7 +14,7 @@ import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
 import store from './store/Store';
-import ListaPostagem from './components/postagens/listaPostagem/ListaPostagem';
+import ListaPostagem from './components/postagens/listapostagem/ListaPostagem';
 
 
 

@@ -9,7 +9,7 @@ import Carrossel from '../../components/carrossel/Carrossel';
 import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
 import { UserState } from '../../store/token/Reducer';
 import './Home.css';
-import TabPostagem from '../../components/postagens/tabPostagem/TabPostagem';
+import TabPostagem from '../../components/postagens/tabpostagem/TabPostagem';
 
 
 function Home() {
