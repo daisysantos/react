@@ -11,7 +11,7 @@ import { UserState } from '../../../store/token/Reducer';
 import { toast } from 'react-toastify';
 import { addToken } from '../../../store/token/Actions';
 
-function Listapost() {
+function ListaPostagem() {
 
   let navigate = useNavigate();
 
@@ -109,4 +109,4 @@ function Listapost() {
   );
 }
 
-export default Listapost;
+export default ListaPostagem;

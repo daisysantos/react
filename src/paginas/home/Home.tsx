@@ -11,6 +11,7 @@ import { UserState } from '../../store/token/Reducer';
 import './Home.css';
 import TabPostagem from '../../components/postagens/tabPostagem/TabPostagem';
 
+
 function Home() {
 
     let navigate = useNavigate();
